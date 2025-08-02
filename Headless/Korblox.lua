@@ -54,7 +54,7 @@ local function applyKorblox(character)
                     character.DYHUB_1:Destroy()
                 end
                 local part = Instance.new("Part")
-                part.Name = "DYHUB_1"
+                part.Name = "Mscuaz_1"
                 part.Size = Vector3.new(1, 2, 1)
                 part.Anchored = false
                 part.CanCollide = false
