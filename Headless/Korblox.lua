@@ -4,7 +4,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 local function applyHeadless(character)
-    if getgenv().DYHUB_HEADLESS then
+    if getgenv().Mscuaz_HEADLESS then
         local head = character:WaitForChild("Head")
         head.Transparency = 1
         spawn(function()
@@ -27,7 +27,7 @@ local function applyHeadless(character)
 end
 
 local function applyKorblox(character)
-    if not getgenv().DYHUB_KORBLOX then return end
+    if not getgenv().Mscuaz_KORBLOX then return end
     local humanoid = character:WaitForChild("Humanoid")
     if humanoid then
         if humanoid.RigType == Enum.HumanoidRigType.R15 then
