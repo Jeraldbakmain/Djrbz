@@ -3,17 +3,6 @@ repeat task.wait() until game:IsLoaded()
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
-local function kickIfNoCredit()
-    local credit = getgenv().DYHUBTHEBEST
-    if type(credit) ~= "string" or credit ~= "Join our (dsc.gg/dyhub)" then
-        LocalPlayer:Kick("delete credit DYHUB?")
-        return false
-    end
-    return true
-end
-
-if not kickIfNoCredit() then return end
-
 local function applyHeadless(character)
     if getgenv().DYHUB_HEADLESS then
         local head = character:WaitForChild("Head")
