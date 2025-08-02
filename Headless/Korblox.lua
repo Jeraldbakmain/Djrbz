@@ -4,7 +4,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 local function kickIfNoCredit()
-    local credit = getgenv().DYHUBTHEBEST
+    local credit = getgenv().MscuazScriptIsBest
     if type(credit) ~= "string" or credit ~= "Mscuaz Is The Best)" then
         LocalPlayer:Kick("delete credit Mscuaz?😡")
         return false
